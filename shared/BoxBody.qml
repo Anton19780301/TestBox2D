@@ -1,4 +1,5 @@
-import Box2D 2.0//import Box2D 2.0
+import Box2D 2.0
+//import Box2D 2.0
 import Box2DStatic 2.0
 
 Body {
@@ -24,7 +25,6 @@ Body {
 
     Box {
         id: box
-
         onBeginContact: body.beginContact(other)
         onEndContact: body.endContact(other)
     }

@@ -1,31 +1,37 @@
 //import Box2D 2.0
 import Box2DStatic 2.0
 
+
 /*
   This body places 32-pixel wide invisible static bodies around the screen,
   to avoid stuff getting out.
 */
 Body {
+
+    property int bodyWidth: 1000
+    property int bodyHeight: 800
+    property int bodyMeasure: 40
+
     world: physicsWorld
 
     Box {
-        y: screen.height
-        width: screen.width
-        height: 32
+        y: bodyHeight
+        width: bodyWidth
+        height: bodyMeasure
     }
     Box {
-        y: -32
-        height: 32
-        width: screen.width
+        y: -1 * bodyMeasure
+        height: bodyMeasure
+        width: bodyWidth
     }
     Box {
-        x: -32
-        width: 32
-        height: screen.height
+        x: -1 * bodyMeasure
+        width: bodyMeasure
+        height: bodyHeight
     }
     Box {
-        x: screen.width
-        width: 32
-        height: screen.height
+        x: bodyWidth
+        width: bodyMeasure
+        height: bodyHeight
     }
 }

@@ -1,9 +1,7 @@
 <RCC>
     <qresource prefix="/">
-
         <file>main.qml</file>
-        <file>Wall.qml</file>
-
+        <file>TileSlide.qml</file>
         <file>shared/BoxBody.qml</file>
         <file>shared/ChainBody.qml</file> 
         <file>shared/CircleBody.qml</file>
@@ -13,8 +11,13 @@
         <file>shared/PolygonBody.qml</file>
         <file>shared/RectangleBoxBody.qml</file>
         <file>shared/ScreenBoundaries.qml</file>
-
-        <file>images/wall.jpg</file>
-
+        <file>shared/Trapezoid.qml</file>
+        <file>images/tile0.jpg</file>
+        <file>images/tile1.jpg</file>
+        <file>images/tile2.jpg</file>
+        <file>images/tile3.jpg</file>
+        <file>images/tile5.jpg</file>
+        <file>images/tile7.jpg</file>
+        <file>images/tile9.jpg</file>
     </qresource>
 </RCC>
